@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //truthy value?
+        //falsy value?
+
+        //boolean true
+        //boolean false
+
+        let a=0     //0 is falsy value
+        let b=""    //empty string is falsy vaue
+        let c=[]    //empty list is truthy
+        let d= -1   //-1 is truthy
+        let e=undefined //undefined is falsy
+        console.log(Boolean(a)) //false
+        console.log(Boolean(b)) //false
+        if (d) {
+            console.log("Hi D")
+        }
+        else {
+            console.log("Bye D")
+        }
+
+
+        let f = 0 || null || "Virat"  || Nan //first truthy value
+        let f1 = 0 || null  || NaN      //first truthy value
+        
+        
+        let g = 0 && "Virat"            //first falsy value
+        let g1= undefined && "" && {} 
+        let g2= 1 && 2 && 3   
+        console.log(g2)                 //undefined
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
