@@ -1,0 +1,6 @@
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: orange;  
+}

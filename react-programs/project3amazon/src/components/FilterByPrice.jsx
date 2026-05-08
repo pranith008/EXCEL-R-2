@@ -10,5 +10,4 @@ const FilterByPrice = ({handleClick}) => {
    </ul>
   )
 }
-
 export default FilterByPrice
