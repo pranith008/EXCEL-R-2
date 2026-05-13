@@ -13,6 +13,9 @@ import SingleProduct from './pages/SingleProduct'
 import AllProductsPage2 from './pages/AllProductsPage2'
 import SingleProduct2 from './pages/SingleProduct2'
 import ShoppingCart from './pages/ShoppingCart'
+import CheckOut from './pages/CheckOut'
+import MakePayment from './pages/MakePayment'
+import CheckOut2 from './pages/CheckOut2'
 
 const App = () => {
   return (
@@ -24,6 +27,8 @@ const App = () => {
                 <Route path="/rich" element={<RictTextBox2 />} />
                 <Route path="/single/:prodid" element={<SingleProduct2 />} />
                 <Route path="/cart" element={<ShoppingCart />} />
+                <Route path="/checkout" element={<CheckOut2 />} />
+                <Route path="/payment" element={<MakePayment />} />
           </Routes>
   </Router>
   )
