@@ -1,0 +1,15 @@
+.parent-container{
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+}
+
+.left-section{
+    /* background-color: lightblue; */
+    flex: 1;
+}
+
+.right-section{
+   /* background-color: lightpink; */
+   flex: 1;
+}

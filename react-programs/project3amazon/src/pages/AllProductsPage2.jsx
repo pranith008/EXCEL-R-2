@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './AllProductsPage.css';
 import Product from '../components/Products';
 import FilterBar from '../components/Filterbar';
@@ -10,32 +10,25 @@ import SearchBar from '../components/SearchBar';
 import { useEffect } from 'react';
 import axios from 'axios'
 import Breadcrumb from '../components/Breadcrumb';
+import ProductContext from '../contexts/ProductContext';
 
-
-const AllProductsPage1 = () => {
+const AllProductsPage2 = () => {
 
     const [products, setProducts] = useState([])
     const [buproducts, setBuproducts] = useState([])
 
+    const data=useContext(ProductContext)  //data={product:[...]}
+    console.log(data.products)
+
+    //const {products} = useContext(ProductContext)
+
     useEffect(
         ()=>{
-            loadData()
+           setProducts(data.products)
+           setBuproducts(data.products)
+           
         },[]
-    )           //[] - call the loadData() once at the time of component loading
-                //[products,buproducts] - call the loadData() once at the mentioned state changes
-                //missing - call the loadData() once any state changes
-    async function loadData() {
-        try {
-            const apiproducts = await axios.get("https://fakestoreapi.com/products")
-            // const apiproducts = await axios.get("http://localhost:8087/products/getAllProducts")
-            console.log(apiproducts) //single object {header,status,ok, data}
-            setProducts(apiproducts.data)
-            setBuproducts(apiproducts.data)
-        }
-        catch (error) {
-            console.log(error)
-        }
-    }
+    )           
 
 
     const productCategories = buproducts.map(
@@ -109,4 +102,4 @@ const AllProductsPage1 = () => {
     );
 }
 
-export default AllProductsPage1
+export default AllProductsPage2

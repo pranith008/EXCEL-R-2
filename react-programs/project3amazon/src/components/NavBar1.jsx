@@ -13,6 +13,7 @@ const NavBar1 = () => {
         <li onClick={()=>handleClick("/")}>Home</li>
         <li onClick={()=>handleClick("/shop")}>Shopping</li>
         <li onClick={()=>handleClick("/rich")}>TextArea</li>
+        <li onClick={()=>handleClick("/cart")}>Cart</li>
    </ol>
   )
 }

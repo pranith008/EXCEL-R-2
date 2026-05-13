@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Product from '../components/Products'
 import axios from 'axios'
+import Breadcrumb from '../components/Breadcrumb'
 
 const SingleProduct = () => {
    const {prodid} = useParams()
@@ -30,7 +31,11 @@ const SingleProduct = () => {
    }
   return (
     <>
-    {product?<Product product={product} /> : <h1>Fetching Product Info..</h1>}
+    {product?
+    <>
+    <Breadcrumb product={product} />
+    <Product product={product} /> 
+    </>: <h1>Fetching Product Info..</h1>}
     </>
   )
 }
