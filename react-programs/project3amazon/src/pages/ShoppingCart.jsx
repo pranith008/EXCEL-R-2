@@ -54,7 +54,7 @@ const ShoppingCart = () => {
                         )}
                 </tbody>
             </table>
-            <button onClick={proceedToCheckout}>Proceed to Checkout</button>
+            <button onClick={proceedToCheckout} className="btn btn-dark d-block mx-auto mt-3 px-5 " >Proceed to Checkout</button>
         </>
     )
 }

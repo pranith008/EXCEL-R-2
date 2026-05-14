@@ -16,6 +16,7 @@ import ShoppingCart from './pages/ShoppingCart'
 import CheckOut from './pages/CheckOut'
 import MakePayment from './pages/MakePayment'
 import CheckOut2 from './pages/CheckOut2'
+import OrderConfirmation from './pages/OrderConfirmation'
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
                 <Route path="/cart" element={<ShoppingCart />} />
                 <Route path="/checkout" element={<CheckOut2 />} />
                 <Route path="/payment" element={<MakePayment />} />
+                <Route path="/proceed" element={<OrderConfirmation />} />
           </Routes>
   </Router>
   )

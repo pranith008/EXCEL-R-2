@@ -31,6 +31,26 @@ function ProductContextProvider  ({children}) {
         )
     }
 
+    function emptyTheCart()
+    {
+        setCartitems({})
+        localStorage.removeItem("amazoncart")
+    }
+
+    function totalCartItems()
+    {
+        let sum=0
+        for(let key in cartitems)
+        {
+            if(cartitems[key]>0)
+            {
+                sum+=cartitems[key]
+            }
+        }
+        return sum
+
+    }
+
     useEffect(
         ()=>{
                 localStorage.setItem("amazoncart",JSON.stringify(cartitems))
@@ -55,7 +75,7 @@ function ProductContextProvider  ({children}) {
     }
 
   return (
-   <ProductContext.Provider value={{products,cartitems,addToCart,removeFromCart}}>
+   <ProductContext.Provider value={{products,cartitems,addToCart,removeFromCart,totalCartItems,emptyTheCart}}>
     {children}
    </ProductContext.Provider>
   )
