@@ -1,48 +1,138 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import './LandingPage.css'
+import { useNavigate } from 'react-router-dom'
 
 const LandingPage = () => {
+
   const navigate = useNavigate()
 
   return (
-    <main className='landing-page'>
-      <section className='hero'>
-        <div className='hero-content'>
-          <span className='eyebrow'>Premium shopping experience</span>
-          <h1>Dark luxury for modern storefronts.</h1>
+
+    <div className="landing-page">
+
+      {/* HERO SECTION */}
+
+      <section className="hero-section">
+
+        <div className="hero-content">
+
+          <span className="hero-tag">
+            Premium Shopping Experience
+          </span>
+
+          <h1>
+            Discover Fashion, Electronics & Lifestyle Products
+          </h1>
+
           <p>
-            Discover products in a premium black-and-gold interface built to feel bold, elegant, and easy to explore. Start shopping now and enjoy a sleek, curated experience across every page.
+            Welcome to ShopVerse — your one-stop destination for
+            premium fashion, trending electronics, jewelry, and
+            modern lifestyle products at affordable prices.
           </p>
 
-          <div className='hero-buttons'>
-            <button className='btn-primary' onClick={() => navigate('/shop')}>
+          <div className="hero-buttons">
+
+            <button
+              className="shop-btn"
+              onClick={() => navigate('/shop')}
+            >
               Shop Now
             </button>
-            <button className='cta-button secondary' onClick={() => window.scrollTo({ top: 900, behavior: 'smooth' })}>
-              Explore Features
+
+            <button className="explore-btn">
+              Explore Brands
             </button>
+
           </div>
+
         </div>
+
       </section>
 
-      <section className='landing-features'>
-        <div className='features-grid'>
-          <article className='feature-card'>
-            <h3>Brand-first design</h3>
-            <p>Every surface uses the palette you provided, with rich gold highlights, soft ivory text, and layered charcoal panels.</p>
-          </article>
-          <article className='feature-card'>
-            <h3>Easy product discovery</h3>
-            <p>Filter, search, and browse products in a clean dark layout built for fast decision making and minimal visual noise.</p>
-          </article>
-          <article className='feature-card'>
-            <h3>Consistent experience</h3>
-            <p>The new landing page, navbar, cards, and inputs all share the same black background aesthetic and accent palette.</p>
-          </article>
+
+      {/* ABOUT SECTION */}
+
+      <section className="about-section">
+
+        <div className="section-title">
+          <h2>Why Choose Our Store?</h2>
+          <p>
+            Built for modern shoppers with premium UI and seamless experience.
+          </p>
         </div>
+
+        <div className="features-container">
+
+          <div className="feature-card">
+            <h3>Top Brands</h3>
+            <p>
+              Explore products from trusted and trending global brands.
+            </p>
+          </div>
+
+          <div className="feature-card">
+            <h3>Fast Shopping</h3>
+            <p>
+              Easy search, smart filters, and responsive product browsing.
+            </p>
+          </div>
+
+          <div className="feature-card">
+            <h3>Secure Experience</h3>
+            <p>
+              Smooth and secure shopping experience with modern design.
+            </p>
+          </div>
+
+        </div>
+
       </section>
-    </main>
+
+
+      {/* CATEGORY SECTION */}
+
+      <section className="category-section">
+
+        <div className="section-title">
+          <h2>Popular Categories</h2>
+        </div>
+
+        <div className="category-container">
+
+          <div className="category-card">
+            Men's Clothing
+          </div>
+
+          <div className="category-card">
+            Women's Clothing
+          </div>
+
+          <div className="category-card">
+            Electronics
+          </div>
+
+          <div className="category-card">
+            Jewelery
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* FOOTER */}
+
+      <footer className="footer">
+
+        <h2>ShopVerse</h2>
+
+        <p>
+          Your premium ecommerce destination for fashion and technology.
+        </p>
+
+      </footer>
+
+    </div>
   )
 }
 

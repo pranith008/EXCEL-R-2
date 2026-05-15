@@ -2,7 +2,7 @@ import React from 'react';
 import './AllProductsPage.css';
 import products from '../data/allproducts';
 import Product from '../components/Products';
-import FilterBar from '../components/Filterbar';
+import FilterBar from '../components/FilterBar';
 import { useState } from 'react';
 import FilterByCategoryBar from '../components/FilterByCategoryBar';
 import FilterByPrice from '../components/FilterByPrice';

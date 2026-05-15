@@ -3,7 +3,6 @@ import './Breadcrumb.css'
 import { Link } from 'react-router-dom'
 
 const Breadcrumb = ({ product }) => {
-  let arrowImg = '/myimages/Arrow.png'
 
   return (
     <div className="container mt-3">
@@ -13,7 +12,7 @@ const Breadcrumb = ({ product }) => {
           HOME
         </Link>
 
-        <img className="arrow-img" src={arrowImg} alt="arrow" />
+        <span className="arrow">❯</span>
 
         <Link
           to="/shop"
@@ -22,14 +21,14 @@ const Breadcrumb = ({ product }) => {
           SHOP
         </Link>
 
-        <img className="arrow-img" src={arrowImg} alt="arrow" />
+        <span className="arrow">❯</span>
 
         <span className="text-secondary text-uppercase">
           {product.category}
         </span>
 
-        <img className="arrow-img" src={arrowImg} alt="arrow" />
-
+        <span className="arrow">❯</span>
+        
         <span className="fw-bold text-dark">
           {product.title}
         </span>

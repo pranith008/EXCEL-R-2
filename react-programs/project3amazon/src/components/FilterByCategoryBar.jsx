@@ -1,13 +1,28 @@
 import React from 'react'
-import './Filterbar.css'
-const FilterByCategoryBar = ({categories,handleClick}) => {
-    //console.log('filter compo' ,categories)
+import './FilterBar.css'
+
+const FilterByCategoryBar = ({ categories, handleClick }) => {
+
   return (
-   <ul>
-        {categories.map(
-            (cat,index)=><li key={index} onClick={()=>handleClick(cat)}>{cat}</li>
-        )}
-   </ul>
+
+    <div className="filter-container">
+
+      {
+        categories.map((cat, index) => (
+
+          <button
+            key={index}
+            className="filter-btn"
+            onClick={() => handleClick(cat)}
+          >
+            {cat}
+          </button>
+
+        ))
+      }
+
+    </div>
+
   )
 }
 

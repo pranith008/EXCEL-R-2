@@ -3,9 +3,20 @@ import './SearchBar.css'
 
 const SearchBar = ({handleChange}) => {
   return (
-    <>
-    <input type="text" onChange={handleChange}/>
-    </>
+    <div className="search-container">
+
+      <input
+        type="text"
+        placeholder="Search products..."
+        onChange={handleChange}
+        className="search-input"
+      />
+
+      <button className="search-btn">
+        Search
+      </button>
+
+    </div>
   )
 }
 export default SearchBar

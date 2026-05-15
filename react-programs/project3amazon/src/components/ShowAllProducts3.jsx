@@ -1,9 +1,9 @@
 import React from 'react';
 import './ShowAllProducts.css';
-import productsx from '../data/allproducts';
+import products from '../data/allproducts';
 import './ShowAllProducts2.css'
 import Product from './Products';
-import FilterBar from './Filterbar';
+import FilterBar from './FilterBar';
 import { useState } from 'react';
 import FilterByCategoryBar from './FilterByCategoryBar';
 import FilterByPrice from './FilterByPrice';

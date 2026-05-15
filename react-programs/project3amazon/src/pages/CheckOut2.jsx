@@ -35,7 +35,7 @@ const CheckOut2 = () => {
     console.log(promocode)
 
     function applyPromoCode() {
-        if (promocode === "EXL10") {
+        if (promocode === "WEL10") {
             setIsPromoApplied(true)
             setDiscount(0.10 * carttotal)
             totalPayable = totalPayable - discount
@@ -114,8 +114,8 @@ const CheckOut2 = () => {
                             value={promocode}
                             onChange={handlePromoOnChange}
                         />
-                        <button onClick={applyPromoCode}>Apply</button>
-                        <button onClick={()=>setIsPromoApplied(false)}>Remove</button>
+                        <button onClick={applyPromoCode} className="coupon-btn apply-btn">Apply</button>
+                        <button onClick={()=>setIsPromoApplied(false)} className="coupon-btn apply-btn">Remove</button>
                     </div>
                     <div>
                         <h2>Shipping Address</h2>
@@ -125,6 +125,7 @@ const CheckOut2 = () => {
                             onChange={populateAddress}
                             placeholder='Enter Shipping Address'
                             rows="5"
+                            className="shipping-textarea"
                         />
                     </div>
 

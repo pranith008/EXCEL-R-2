@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.order-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f9;
+}
+
+.order-card {
+  width: 420px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+  font-size: 70px;
+  color: green;
+  margin-bottom: 20px;
+}
+
+.order-card h1 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.message {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.order-details {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.order-details p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.track-btn,
+.shop-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.track-btn {
+  background: #ff9800;
+  color: white;
+}
+
+.track-btn:hover {
+  background: #e68900;
+}
+
+.shop-btn {
+  background: #222;
+  color: white;
+}
+
+.shop-btn:hover {
+  background: #000;
+}
