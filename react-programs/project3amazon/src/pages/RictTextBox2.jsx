@@ -34,7 +34,7 @@ const RictTextBox2 = () => {
   return (
     <div className="parent-container">
         <div className='left-section'>
-            <textarea rows="20" cols="40" onChange={analyzeText} value={text}></textarea>
+            <textarea className="text-area-box " onChange={analyzeText} value={text} placeholder='write something here...'></textarea>
         </div>
         <div className='right-section'>
             <h3>Preview</h3>

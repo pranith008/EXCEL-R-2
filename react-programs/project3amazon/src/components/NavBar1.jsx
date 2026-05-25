@@ -15,6 +15,9 @@ const NavBar1 = () => {
       <li onClick={() => handleClick("/")}>Home</li>
       <li onClick={() => handleClick("/shop")}>Shopping</li>
       <li onClick={() => handleClick("/rich")}>TextArea</li>
+      <li onClick={() => handleClick("/add")}>Add Product</li>
+      <li onClick={() => handleClick("/register")}>Add User</li>
+      <li onClick={() => handleClick("/login")}>User Login</li>
       <li id="cart-icon" onClick={() => handleClick("/cart")}>
         Cart
         <span id="timing">{totalCartItems()}</span>

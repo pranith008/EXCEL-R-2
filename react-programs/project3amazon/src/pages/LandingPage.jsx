@@ -99,19 +99,19 @@ const LandingPage = () => {
 
         <div className="category-container">
 
-          <div className="category-card">
+          <div className="category-card" onClick={() => navigate("/shop?category=men")}>
             Men's Clothing
           </div>
 
-          <div className="category-card">
+          <div className="category-card" onClick={() => navigate("/shop?category=women")} >
             Women's Clothing
           </div>
 
-          <div className="category-card">
+          <div className="category-card" onClick={() => navigate("/shop?category=electronics")}>
             Electronics
           </div>
 
-          <div className="category-card">
+          <div className="category-card"  onClick={() => navigate("/shop?category=jewelery")}>
             Jewelery
           </div>
 

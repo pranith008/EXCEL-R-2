@@ -61,20 +61,20 @@ const CheckOut2 = () => {
 
                         <div className="d-flex justify-content-between border-bottom py-3">
                             <p className="fw-semibold m-0">Cart Total Amount</p>
-                            <p className="m-0">₹ {carttotal.toFixed(2)}</p>
+                            <p className="m-0">$ {carttotal.toFixed(2)}</p>
                         </div>
 
 
 
                         <div className="d-flex justify-content-between border-bottom py-3">
                             <p className="fw-semibold m-0">Shipping Fee</p>
-                            <p className="m-0">₹ {shippingFee.toFixed(2)}</p>
+                            <p className="m-0">$ {shippingFee.toFixed(2)}</p>
                         </div>
 
                         <div className="d-flex justify-content-between py-3">
                             <p className="fw-bold fs-5 m-0">Total Payable</p>
                             <p className="fw-bold fs-5 text-success m-0">
-                                ₹ {totalPayable.toFixed(2)}
+                                $ {totalPayable.toFixed(2)}
                             </p>
                         </div>
 
@@ -89,19 +89,19 @@ const CheckOut2 = () => {
                             <div>
                                 <div className="d-flex justify-content-between border-bottom py-3">
                                     <p className="fw-semibold m-0">Cart Total Amount</p>
-                                    <p className="m-0">₹ {(carttotal - discount).toFixed(2)}</p>
+                                    <p className="m-0">$ {(carttotal - discount).toFixed(2)}</p>
                                 </div>
                             </div>
 
                             <div className="d-flex justify-content-between border-bottom py-3">
                                 <p className="fw-semibold m-0">Shipping Fee</p>
-                                <p className="m-0">₹ {shippingFee.toFixed(2)}</p>
+                                <p className="m-0">$ {shippingFee.toFixed(2)}</p>
                             </div>
 
                             <div className="d-flex justify-content-between py-3">
                                 <p className="fw-bold fs-5 m-0">Total Payable</p>
                                 <p className="fw-bold fs-5 text-success m-0">
-                                    ₹ {(totalPayable - discount).toFixed(2)}
+                                    $ {(totalPayable - discount).toFixed(2)}
                                 </p>
                             </div>
                         </div>

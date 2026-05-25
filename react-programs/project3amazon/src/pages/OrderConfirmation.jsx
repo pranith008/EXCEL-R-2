@@ -3,13 +3,12 @@ import { FaCheckCircle } from "react-icons/fa";
 import "./OrderConfirmation.css";
 
 const OrderConfirmation = () => {
-  const orderId = "ORD123456";
+  const orderId = "ORD" + Math.floor(Math.random()*1000000);
 
   return (
     <div className="order-container">
       <div className="order-card">
         <FaCheckCircle className="success-icon" />
-
         <h1>Order Confirmed!</h1>
 
         <p className="message">

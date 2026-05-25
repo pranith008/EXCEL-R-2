@@ -164,7 +164,7 @@
 }
 
 .category-card:hover{
-    transform:scale(1.05);
+    transform:translate(-5px);
 }
 
 

@@ -7,6 +7,8 @@ function ProductContextProvider  ({children}) {
     const[products,setProducts]=useState()
     const[cartitems,setCartitems]=useState(getDefaultCartItems())
 
+    const [billingDetails,setBillingDetails]=useState({})
+    const [paymentMode,setPaymentMode]=useState("")
 
     function getDefaultCartItems()
     {
@@ -64,8 +66,8 @@ function ProductContextProvider  ({children}) {
 
     async function loadData() {
         try {
-            const apiproducts = await axios.get("https://fakestoreapi.com/products")
-            //const apiproducts = await axios.get("http://localhost:8087/products/getAllProducts")
+            // const apiproducts = await axios.get("https://fakestoreapi.com/products")
+            const apiproducts = await axios.get("http://localhost:8087/products/getAllProducts")
             console.log(apiproducts) //single object {header,status,ok, data}
             setProducts(apiproducts.data)
         }
@@ -75,7 +77,7 @@ function ProductContextProvider  ({children}) {
     }
 
   return (
-   <ProductContext.Provider value={{products,cartitems,addToCart,removeFromCart,totalCartItems,emptyTheCart}}>
+   <ProductContext.Provider value={{products,cartitems,addToCart,removeFromCart,totalCartItems,emptyTheCart,billingDetails,setBillingDetails,paymentMode,setPaymentMode}}>
     {children}
    </ProductContext.Provider>
   )

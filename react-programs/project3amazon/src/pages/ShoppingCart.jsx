@@ -4,9 +4,7 @@ import ProductContext from '../contexts/ProductContext'
 import { useNavigate } from 'react-router-dom'
 
 const ShoppingCart = () => {
-
     const navigate = useNavigate()
-
     const {
         products,
         cartitems,
@@ -63,11 +61,11 @@ const ShoppingCart = () => {
                                             </td>
 
                                             <td>
-                                                ₹ {prod.price}
+                                                $ {prod.price}
                                             </td>
 
                                             <td>
-                                                ₹ {(cartitems[prod.id] * prod.price).toFixed(2)}
+                                                $  {(cartitems[prod.id] * prod.price).toFixed(2)}
                                             </td>
 
                                             <td>

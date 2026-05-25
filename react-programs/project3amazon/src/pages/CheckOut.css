@@ -11,6 +11,23 @@
     cursor: pointer;
     transition: 0.3s ease;
 }
+.promo-input{
+    width: 260px;
+    height: 50px;
+    padding: 0 16px;
+    border: 2px solid #dcdcdc;
+    border-radius: 12px;
+    font-size: 18px;
+    outline: none;
+    background: #f9f9f9;
+    transition: 0.3s ease;
+}
+
+.promo-input:focus{
+    border-color: #0d6efd;
+    background: white;
+    box-shadow: 0 0 8px rgba(13,110,253,0.3);
+}
 
 /* Apply Button */
 .apply-btn{
@@ -35,17 +52,14 @@
 }
 .shipping-textarea{
     width: 100%;
-    max-width: 500px;
+    height: 100px;
     padding: 14px;
     margin-top: 10px;
-
     border: 2px solid #dcdcdc;
     border-radius: 12px;
-
     font-size: 16px;
     outline: none;
     resize: none;
-
     transition: 0.3s ease;
     background: #f9f9f9;
 }

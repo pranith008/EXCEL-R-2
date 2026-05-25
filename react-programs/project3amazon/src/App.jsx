@@ -17,6 +17,17 @@ import CheckOut from './pages/CheckOut'
 import MakePayment from './pages/MakePayment'
 import CheckOut2 from './pages/CheckOut2'
 import OrderConfirmation from './pages/OrderConfirmation'
+import CheckOut3 from './pages/CheckOut3'
+import MakePayment2 from './pages/MakePayment2'
+import OrderConfirmation2 from './pages/OrderConfirmation2'
+import OrderConfirmation4 from './pages/OrderConfirmation4'
+import MakePayment3 from './pages/MakePayment3'
+import CheckOut4 from './pages/CheckOut4'
+import AddProducts from './pages/AddProducts'
+import AddProducts1 from './pages/AddProducts1'
+import RegisterUser from './pages/RegisterUser'
+import RegisterUser1 from './pages/RegisterUser1'
+import LoginUser from './pages/LoginUser'
 
 const App = () => {
   return (
@@ -28,9 +39,12 @@ const App = () => {
                 <Route path="/rich" element={<RictTextBox2 />} />
                 <Route path="/single/:prodid" element={<SingleProduct2 />} />
                 <Route path="/cart" element={<ShoppingCart />} />
-                <Route path="/checkout" element={<CheckOut2 />} />
-                <Route path="/payment" element={<MakePayment />} />
-                <Route path="/proceed" element={<OrderConfirmation />} />
+                <Route path="/checkout" element={<CheckOut4 />} />
+                <Route path="/payment" element={<MakePayment3 />} />
+                <Route path="/proceed" element={<OrderConfirmation4 />} />
+                <Route path="/add" element={<AddProducts1 />} />
+                <Route path="/register" element={<RegisterUser1 />} />
+                <Route path="/login" element={<LoginUser />} />
           </Routes>
   </Router>
   )

@@ -1,0 +1,70 @@
+.register-container{
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.register-title{
+    text-align: center;
+    font-size: 32px;
+    color: #0d6efd;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.input-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus{
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px rgba(13,110,253,0.3);
+}
+
+.show-hide{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    cursor: pointer;
+    color: #555;
+}
+
+.register-btn{
+    width: 100%;
+    padding: 14px;
+    background: #0d6efd;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-btn:hover{
+    background: #0b5ed7;
+    transform: translateY(-2px);
+}
+
+.text-danger{
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
